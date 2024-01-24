@@ -1,0 +1,19 @@
+Powershell:
+
+pyinstaller --onefile --add-data "picture/;picture" --hidden-import=psutil main.py
+pyinstaller --onefile --name Sentrak-GUI-RBPie-Py3_9 --add-data "picture;picture" --add-data "record/record" .\main.py --hidden-import=minimalmodbus
+pyinstaller --onefile --name Sentrak-GUI-RBPie-Py3_10 --add-data "picture;picture" --add-data "record/record" .\main.py --hidden-import=minimalmodbus
+
+.\venv-py3_10\Scripts\activate
+deactivate
+
+
+
+Linux:
+
+xrandr
+xrandr --output HDMI-1 --mode 1920x1080
+
+
+cd /media/joejoe/ESD-USB/
+sudo umount /media/joejoe/ESD-USB
